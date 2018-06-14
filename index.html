@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Human</title>
+	<script type="text/javascript" src="js.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script type="text/javascript">
+		<!-- hide from non JavaScript Browsers
+		var A = new Array(19);
+		A = ["bg.png","enemy.png","enemy1.png","enemykick.png","enemypunch.png","kick.png","player.png","player1.png",
+		"punch.png","playerhit1.png","playerhit2.png","enemyhit1.png","enemyhit2.png","enemyup.png","playerup.png","enemydown.png","playerdown.png",
+		"enemypush.png","playerpush.png"];
+		for(var i=0;i<19;i++){
+			Image1= new Image(150,20);
+			Image1.src = A[i];
+		} // End Hiding -->
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="player"></div><div id="enemy"></div>
+	</div>
+	<div id="but">
+	<p>Player 1 Buttons:</p> 
+	<ul>
+	<li>W : Jump</li>
+	<li>A : Left</li>
+	<li>D : Right</li>
+	<li>S : Duck</li>
+	<li>G : Punch</li>
+	<li>H : Kick</li>
+	<li>Q : Push</li>
+	</ul>
+	<p>Player 2 Buttons:</p> 
+	<ul>
+	<li>Up : Jump</li>
+	<li>Left : Left</li>
+	<li>Right : Right</li>
+	<li>Down : Duck</li>
+	<li>NumPad1 : Punch</li>
+	<li>NumPad2 : Kick</li>
+	<li>NumPad3 : Push</li>
+	</ul>
+	</div>
+	<div id="info">
+		<div class="blife" style="float:left;"><div id="mylife" class="life"></div></div>
+		<div class="blife" style="float:right;"><div id="enemyslife" class="life" style="float:right;"></div></div>
+		<br/>
+		<div class="benergy" style="float:left;"><div id="myenergy" class="energy"></div></div>
+		<div class="benergy" style="float:right;"><div id="enemysenergy" class="energy" style="float:right;"></div></div>
+	</div>
+	<div id="msg">	
+		<p id="p1" style="float:left;"></p>
+		<p id="p2" style="float:right;"></p>
+		<center><p id="center"></p></center>
+		<center><p id="again"></p></center>
+	</div>
+</body>
+</html>
